@@ -20,6 +20,8 @@ body{
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top: 0;
 
     border-bottom: 1px solid lightgrey;
 }
@@ -81,6 +83,14 @@ body{
 .cancelar{
     display: flex;
     flex-direction: row;
+}
+
+.cancelar img{
+    width: 20px;
+}
+
+.parrafo-cancelar{
+    margin-bottom: 5%;
 }
 
 .form-login {
@@ -146,6 +156,11 @@ body{
     height: 40px;
     width: 80%;
     text-align: center;
+}
+
+.tienes a{
+    color: black;
+    text-decoration-color: black;
 }
 
 .footer{
