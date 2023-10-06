@@ -65,16 +65,87 @@ body{
     height: 100%;
 }
 
-.padre img{
-    width: 70%;
-    height: 70%;
+.padre .imagen {
+    width: 45%;
+    margin-right: 20px;
+}
+
+.padre img {
+    max-width: 100%;
+    height: auto;
     overflow: hidden;
     object-fit: cover;
     background-color: white;
 }
 
-.form-login{
-    border-left: 2px solid black;
+.cancelar{
+    display: flex;
+    flex-direction: row;
+}
+
+.form-login {
+    border-left: 2px solid lightgrey;
+    height: 60vh;
+    width: 40%;
+
+    padding-left: 100px;
+    
+}
+
+.form-login .inicia-sesion{
+    text-align: center; /*dandoloe el mismo ancho de los inputs (lo mas ancho de la caja por asi decirlo) y dandole text aling center se centra el texto*/
+    margin-bottom: 8%;
+    width: 80%;
+}
+
+.form-login input{
+    margin-bottom: 15px;
+    height: 45px;
+    width: 80%;
+
+    border: none;
+    border-bottom: 1px solid lightgrey;
+}
+
+.form-login button{
+    margin-bottom: 15px;
+    height: 50px;
+    width: 80%;
+}
+
+.btn-inicia{
+    background-color: #24469F;
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+    border: none;
+}
+
+.btn-google{
+    background-color: white;
+    color: black;
+    border: 1px solid lightgrey;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.btn-google span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.btn-google img {
+    width: 20px;
+}
+
+.form-login .tienes{
+    margin-bottom: 15px;
+    height: 40px;
+    width: 80%;
+    text-align: center;
 }
 
 .footer{
@@ -105,5 +176,14 @@ body{
     .header .li{
         margin: 1rem 0;
     }
+
+    .padre{
+        flex-direction: column;
+    }
+
+    .padre .imagen {
+        width: 60%;
+    }
+
 
 }
