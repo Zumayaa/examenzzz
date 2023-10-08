@@ -8,6 +8,7 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="./styles/header.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -21,12 +22,13 @@
         <div class="oferta">
             <span>Especial venta de verano en todo- OFF 50%</span>
             <a href="#">¡Compra ahora!</a>
-            <div class="lang">
-                <span>Español</span>
-                <a href="#" class="material-symbols-outlined" id="expand-more">
-                    expand_more
-                </a>
-            </div>
+
+            <select id="frutas" name="fruta">
+                <option value="Español">Español</option>
+                <option value="Inglés">Inglés</option>
+                <option value="Deustch">Deustch</option>
+                <option value="Naruto">Naruto</option>
+            </select>
         </div>
 
         <nav class="desktop-nav">
@@ -89,36 +91,37 @@
         <nav class="mobile-nav">
             <ul class="ul">
                 <li class="li">
-                    <a href="index.html">
-                        Inicio
+                    <a href="index.html" class="material-symbols-outlined">
+                        home
                     </a>
                 </li>
                 <li class="li">
-                    <a href="">Contacto</a>
+                    <button class="material-symbols-outlined" id="search-button">
+                        search</button>
                 </li>
                 <li class="li">
-                    <a href="login.html">
-                        Registrarse
+                    <a href="login.html" class="material-symbols-outlined">
+                        account_circle
                     </a>
                 </li>
                 <li>
-                    <a href="#">
-                        Favoritos
+                    <a href="#" class="material-symbols-outlined">
+                        favorite
                     </a>
                 </li>
                 <li>
-                    <a href="#">
-                        Carrito
+                    <a href="#" class="material-symbols-outlined">
+                        shopping_cart
                     </a>
                 </li>
                 <li>
-                    <a href="#">
-                        Cuenta
+                    <a href="#" class="material-symbols-outlined">
+                        manage_accounts
                     </a>
                 </li>
             </ul>
         </nav>
-        <div class="box" id="search-m">
+        <div class="box" id="search-m-container">
             <input type="text" placeholder="¿Qué es lo que buscas?" class="search-box">
             <a href="#" class="material-symbols-outlined" id="search-m">
                 search
@@ -138,9 +141,9 @@
                     ¡Ten un 10% de descuento en
                     tu primera orden!
                 </h5>
-                
+
                 <div class="box-email">
-                    <input type="text" placeholder="¿Qué es lo que buscas?" class="search-box">
+                    <input type="text" placeholder="Ingresa tu correo" class="search-box">
                     <a href="#" class="material-symbols-outlined">
                         send
                     </a>
@@ -153,7 +156,8 @@
                     Soporte
                 </h3>
                 <h4>
-                    Baja California Sur <br> entre Emiliano Zapata <br> SN Int.SN Chametla, <br> 23205 La Paz, <br> Baja California Sur 
+                    Baja California Sur <br> entre Emiliano Zapata <br> SN Int.SN Chametla, <br> 23205 La Paz, <br> Baja
+                    California Sur
                     México
                 </h4>
                 <h5>
@@ -196,7 +200,7 @@
                 </h3>
                 <a href="#">Ahorra 60 pesos en tu
                     primera compra</a>
-                    <img src="./recursos/qr 1.png" alt="">
+                <img src="./recursos/qr 1.png" alt="">
             </li>
         </ul>
     </footer>

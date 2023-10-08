@@ -5,58 +5,11 @@
     margin: 0;
     padding: 0;
     font-family: 'Raleway', sans-serif;
+    font-size: 62.5%;
 }
 
 body{
     background-color: lightgray;
-}
-
-.header{
-    width: 100%;
-    background-color: white;
-    padding: 1em;
-
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: center;
-    position: sticky;
-    top: 0;
-
-    border-bottom: 1px solid lightgrey;
-}
-
-.header .h1{
-    font-size: 20px;
-}
-
-.header .ul{
-    list-style: none;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: flex-end;
-
-    font-size: 20px;
-}
-
-.header .li{
-    margin: 0 .5em;
-}
-
-.logo{
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: white;
-}
-
-.logo img{
-    width: 50%;
-    height: 50%;
-    overflow: hidden;
-    object-fit: cover;
-    background-color: white;
 }
 
 .padre{
@@ -90,10 +43,12 @@ body{
 }
 
 .parrafo-cancelar{
+    font-size: 1.6rem;
     margin-bottom: 5%;
 }
 
 .form-login {
+    font-size: 2.4rem;
     border-left: 2px solid lightgrey;
     height: 60vh;
     width: 40%;
@@ -103,12 +58,14 @@ body{
 }
 
 .form-login .inicia-sesion{
+    font-size: 3.2rem;
     text-align: center; /*dandoloe el mismo ancho de los inputs (lo mas ancho de la caja por asi decirlo) y dandole text aling center se centra el texto*/
     margin-bottom: 8%;
     width: 80%;
 }
 
 .form-login input{
+    font-size: 1.33333rem;
     margin-bottom: 15px;
     height: 45px;
     width: 80%;
@@ -118,12 +75,14 @@ body{
 }
 
 .form-login button{
+    font-size: 1.33333rem;
     margin-bottom: 15px;
     height: 50px;
     width: 80%;
 }
 
 .btn-inicia{
+    font-size: 2.4rem;
     background-color: #24469F;
     color: white;
     font-weight: bold;
@@ -132,6 +91,7 @@ body{
 }
 
 .btn-google{
+    font-size: 1.33333rem;
     background-color: white;
     color: black;
     border: 1px solid lightgrey;
@@ -140,6 +100,7 @@ body{
 }
 
 .btn-google span{
+    font-size: 1.33333rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -148,10 +109,12 @@ body{
 }
 
 .btn-google img {
+    font-size: 2.4rem;
     width: 20px;
 }
 
 .form-login .tienes{
+    font-size: 1.6rem;
     margin-bottom: 15px;
     height: 40px;
     width: 80%;
@@ -159,6 +122,7 @@ body{
 }
 
 .tienes a{
+    font-size: 1.6rem;
     color: black;
     text-decoration-color: black;
 }
@@ -173,24 +137,8 @@ body{
     background-color: #DFAF67;
 }
 
-.footer .derechos{
-    color: #866CBA;
-    font-weight: 10;
-}
 
 @media screen and (max-width:480px){
-    .header .nav{
-        width: 100%;
-    }
-
-    .header .ul{
-        flex-direction: column;
-        justify-content: flex-start;
-    }
-
-    .header .li{
-        margin: 1rem 0;
-    }
 
     .padre{
         flex-direction: column;

@@ -1,71 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles/registro-style.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="./styles/header.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@900&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
   <title>Registrate | RamDeals</title>
 </head>
+
 <body>
   <header class="header">
-        <div class="logo">
-            <img src="recursos/logo.png" alt="">
-        </div>
-        <nav class="nav">
-            <ul class="ul">
-                <li class="li">
-                    <a href="index.html">
-                        Inicio
-                    </a>
-                </li>
-                <li class="li">Contacto</li>
-                <li class="li">
-                    <a href="login.html">
-                        Registrarse
-                    </a>
-                </li>
-                <input class="text" type="text" placeholder="¿Qué es lo que buscas?">
-            </ul>
-        </nav>
-    </header>
-    <div class="padre">
-      <div class="imagen">
-        <img src="recursos/login.png" alt="">
-      </div>
-      <div class="form-login">
-        <div class="cancelar">
-          <a href="">
-            <img src="recursos/Back.png" alt="Flecha izq">
+    <div class="oferta">
+      <span>Especial venta de verano en todo- OFF 50%</span>
+      <a href="#">¡Compra ahora!</a>
+      <select id="frutas" name="fruta">
+        <option value="Español">Español</option>
+        <option value="Inglés">Inglés</option>
+        <option value="Deustch">Deustch</option>
+        <option value="Naruto">Naruto</option>
+      </select>
+    </div>
+
+    <nav class="desktop-nav">
+      <ul class="ul">
+        <li class="logo">
+          <img src="./recursos/Untitled.svg" alt="">
+          <div class="page-title">
+            <span class="title" id="yellow">RAM <span class="title" id="blue">DEALS</span></span>
+          </div>
+        </li>
+        <li class="li">
+          <a href="index.html">
+            Inicio
           </a>
-          <p class="parrafo-cancelar">
-            Cancelar y volver al inicio
-          </p>
+        </li>
+        <li class="li">
+          <a href="">Contacto</a>
+        </li>
+        <li class="li">
+          <a href="login.html">
+            Registrarse
+          </a>
+        </li>
+        <li class="box">
+          <input type="text" placeholder="¿Qué es lo que buscas?" class="search-box">
+          <a href="#" class="material-symbols-outlined">
+            search
+          </a>
+        </li>
+        <li class="icons">
+          <a href="#" class="material-symbols-outlined">
+            favorite
+          </a>
+        </li>
+        <li class="icons">
+          <a href="#" class="material-symbols-outlined">
+            shopping_cart
+          </a>
+        </li>
+        <li class="icons">
+          <a href="#" class="material-symbols-outlined">
+            person
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="title-container">
+      <div class="logo">
+        <img src="./recursos/Untitled.svg" alt="">
+        <div class="page-title">
+          <span class="title" id="yellow">RAM <span class="title" id="blue">DEALS</span></span>
         </div>
-        <h1 class="inicia-sesion">
-          Crea una cuenta
-        </h1>
-        <form action="submit">
-          <input type="text" placeholder="Nombres">
-          <input type="text" placeholder="Apellidos">
-          <input type="text" placeholder="Correo electrónico">
-          <input type="text" placeholder="Número telefónico">
-          <input type="password" placeholder="Contraseña">
-          <input type="password" placeholder="Confirmar tu contraseña">
-          <button class="btn-inicia">Crear cuenta</button>
-          <button class="btn-google">
-            <span>
-              <img src="recursos/google-logo.png" alt="Google logo">
-              Regístrate con Google
-            </span>
-          </button>
-          <p class="tienes">¿Ya tienes una cuenta? <a href="login.html">Inicia sesión</a></p>
-        </form>
+        <button class="hamburger">
+          <div class="bar">
+            .
+          </div>
+        </button>
       </div>
     </div>
-    <footer class="footer">
-      <h5 class="derechos">
-        Derechos reservados
-      </h5>
-    </footer>
+    <nav class="mobile-nav">
+      <ul class="ul">
+        <li class="li">
+          <a href="index.html" class="material-symbols-outlined">
+            home
+          </a>
+        </li>
+        <li class="li">
+          <button class="material-symbols-outlined" id="search-button">
+            search</button>
+        </li>
+        <li class="li">
+          <a href="login.html" class="material-symbols-outlined">
+            account_circle
+          </a>
+        </li>
+        <li>
+          <a href="#" class="material-symbols-outlined">
+            favorite
+          </a>
+        </li>
+        <li>
+          <a href="#" class="material-symbols-outlined">
+            shopping_cart
+          </a>
+        </li>
+        <li>
+          <a href="#" class="material-symbols-outlined">
+            manage_accounts
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="box" id="search-m-container">
+      <input type="text" placeholder="¿Qué es lo que buscas?" class="search-box">
+      <a href="#" class="material-symbols-outlined" id="search-m">
+        search
+      </a>
+    </div>
+  </header>
+  <div class="padre">
+    <div class="imagen">
+      <img src="recursos/login.png" alt="">
+    </div>
+    <div class="form-login">
+      <div class="cancelar">
+        <a href="">
+          <img src="recursos/Back.png" alt="Flecha izq">
+        </a>
+        <p class="parrafo-cancelar">
+          Cancelar y volver al inicio
+        </p>
+      </div>
+      <h1 class="inicia-sesion">
+        Crea una cuenta
+      </h1>
+      <form action="submit">
+        <input type="text" placeholder="Nombres">
+        <input type="text" placeholder="Apellidos">
+        <input type="text" placeholder="Correo electrónico">
+        <input type="text" placeholder="Número telefónico">
+        <input type="password" placeholder="Contraseña">
+        <input type="password" placeholder="Confirmar tu contraseña">
+        <button class="btn-inicia">Crear cuenta</button>
+        <button class="btn-google">
+          <span>
+            <img src="recursos/google-logo.png" alt="Google logo">
+            Regístrate con Google
+          </span>
+        </button>
+        <p class="tienes">¿Ya tienes una cuenta? <a href="login.html">Inicia sesión</a></p>
+      </form>
+    </div>
+  </div>
+  <footer>
+    <ul>
+      <li>
+        <h3>
+          RAMDEALS
+        </h3>
+        <h4>
+          Suscríbete
+        </h4>
+        <h5>
+          ¡Ten un 10% de descuento en
+          tu primera orden!
+        </h5>
+
+        <div class="box-email">
+          <input type="text" placeholder="Ingresa tu correo" class="search-box">
+          <a href="#" class="material-symbols-outlined">
+            send
+          </a>
+        </div>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <h3>
+          Soporte
+        </h3>
+        <h4>
+          Baja California Sur <br> entre Emiliano Zapata <br> SN Int.SN Chametla, <br> 23205 La Paz, <br> Baja
+          California Sur
+          México
+        </h4>
+        <h5>
+          ramdeals@ramservice.com
+        </h5>
+        <h5>
+          +52-612-117-41-05
+        </h5>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <h3>
+          Cuenta
+        </h3>
+        <a href="#">Mi cuenta</a>
+        <a href="#">Iniciar sesión</a>
+        <a href="#">Registrarme</a>
+        <a href="#">Carrito</a>
+        <a href="#">Lista de deseados</a>
+        <a href="#">Ramdeals</a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <h3>
+          Otros
+        </h3>
+        <a href="#">Privacidad</a>
+        <a href="#">Términos de uso</a>
+        <a href="#">FAQ</a>
+        <a href="#">Contáctanos</a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <h3>
+          Descarga
+          la App
+        </h3>
+        <a href="#">Ahorra 60 pesos en tu
+          primera compra</a>
+        <img src="./recursos/qr 1.png" alt="">
+      </li>
+    </ul>
+  </footer>
+  <script src="./scripts/hamburger.js"></script>
 </body>
+
 </html>
