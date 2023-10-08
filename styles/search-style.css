@@ -61,6 +61,7 @@ body{
 
 .encabezado{
     font-weight: bold;
+    padding-top: 5%;
 }
 
 .busqueda-padre{
@@ -69,12 +70,24 @@ body{
 
 .contenedor-filtros {
     flex: 0.3;
+    padding-top: 5%;
+}
+
+.titulo-resultado{
+    font-size: 18px;
+}
+
+.secciones p{
+    font-size: 20px;
+    padding-bottom: 5%;
 }
 
 .contenedor-productos {
     flex: 2; 
     display: flex;
     flex-direction: column;
+
+    padding-top: 2%;
 }
 
 
