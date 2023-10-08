@@ -14,7 +14,7 @@ body {
 
 .oferta {
     width: 100%;
-    background-color: white;
+    background-color: #DFAF67;
     padding: 1em;
 
     display: flex;
@@ -27,8 +27,11 @@ body {
     border-bottom: 1px solid lightgrey;
 }
 
-.oferta .h1 {
+.oferta span, a{
+    color: #004AAD;
+    text-decoration: none;
     font-size: 20px;
+    margin-right: 30px;
 }
 
 .desktop-nav {
@@ -71,6 +74,7 @@ a:hover {
 }
 
 .box input {
+    font-size: 1.6rem;
     border-radius: 5px;
     padding: 5px;
     outline: none;
@@ -83,8 +87,9 @@ a:hover {
     margin-left: auto;
 }
 
-.icons {
-    margin-top: 5px;
+.icons, .box a {
+    margin-top: 8px;
+    margin-right: 5px;
     transform: scale(1.5);
 }
 
@@ -134,7 +139,7 @@ a:hover {
 
 .hamburger {
     position: relative;
-    display: block;
+    display: none;
     width: 35px;
     cursor: pointer;
     margin-left: auto;
@@ -153,7 +158,7 @@ a:hover {
         display: block;
         width: 100%;
         height: 5px;
-        background-color: #fff;
+        background-color: #004AAD;
         margin: 6px 0px;
         -webkit-transition: 0.1s;
         transition: 0.1s;
@@ -175,8 +180,14 @@ a:hover {
 
 .mobile-nav {
     display: none;
+    position: fixed;
+    right: -100%;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
 }
-
+.mobile-nav.is-active {
+    right: 0%;
+  }
 .mobile-nav .ul {
     list-style: none;
     display: flex;
@@ -187,14 +198,85 @@ a:hover {
 }
 
 .mobile-nav li{
+    text-align: center;
     width: 30vw;
-    background-color: red;
+    background-color: #004AAD;
     padding-top: 10%;
     padding-bottom: 10%;
-    margin: 1%;
-    color: #004AAD;
+    margin: 5%;
+    border-radius: 10px;
+}
+.mobile-nav a{
+    color: #f1d5aa;
+    font-weight: 600;
+    text-align: center;
+}
+.title-container{
+    opacity: 0;
+}
+#search-m{
+    opacity: 0;
+}
+.icons {
+    margin-top: 5px;
+    transform: scale(1.5);
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    background-color: #DFAF67;
+    width: 100vw;
+    font-size: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer a{
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+footer li{
+    list-style: none;
+    margin:  10px 100px 0 100px;
+}
+footer h3{
+    font-size: 1.6rem;
+}
+
+footer h4,h5{
+    font-size: 1.4em;
+}
+footer ul li > * {
+    margin: 5%;
+}
+
+.box-email {
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #F5F5F5;
+    display: flex;
+    min-width: 165px;
+}
+
+.box-email input {
+    font-size: 1.6rem;
+    border-radius: 5px;
+    padding: 5px;
+    outline: none;
+    border: none;
+    background-color: #F5F5F5;
+}
+
+.box-email a {
+    margin-top: 3px;
+    margin-left: auto;
 }
 @media screen and (max-width:1082px) {
+    footer{
+        display: none;
+    }
     .logo {
         margin-right: 0;
     }
@@ -204,7 +286,13 @@ a:hover {
     }
 }
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:810px) {
+    .title-container{
+        opacity: 100;
+    }
+    #search-m{
+        opacity: 100;
+    }
     .page-title .title {
         display: flex;
     }
@@ -223,9 +311,22 @@ a:hover {
     .desktop-nav {
         display: none;
     }
-
+    .hamburger{
+        display: block;
+    }
     .mobile-nav {
-        background-color: #f1d5aa;
         display: flex;
+    }
+    .box{
+        margin: 2%;
+        width: 60vw;
+    }
+    .box input {
+        font-size: 1.4rem;
+        border-radius: 5px;
+        padding: 5px;
+        outline: none;
+        border: none;
+        background-color: #F5F5F5;
     }
 }
