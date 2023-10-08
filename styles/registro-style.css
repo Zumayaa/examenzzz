@@ -214,5 +214,9 @@ body{
         display: none;
     }
 
+    .inicia-sesion{
+        margin-bottom: 10%;
+    }
+
 
 }
