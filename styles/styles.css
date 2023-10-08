@@ -5,13 +5,14 @@
     margin: 0;
     padding: 0;
     font-family: 'Raleway', sans-serif;
+    font-size: 62.5%;
 }
 
-body{
+body {
     background-color: lightgray;
 }
 
-.header{
+.oferta {
     width: 100%;
     background-color: white;
     padding: 1em;
@@ -26,51 +27,205 @@ body{
     border-bottom: 1px solid lightgrey;
 }
 
-.header .h1{
+.oferta .h1 {
     font-size: 20px;
 }
 
-.header .ul{
+.desktop-nav {
+    background-color: #ffffff;
+    border-bottom: 0.5px #754C0F solid;
+}
+
+.desktop-nav .ul {
     list-style: none;
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: flex-end;
-
-    font-size: 20px;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
 }
 
-.header .li{
-    margin: 0 .5em;
+.desktop-nav ul li,
+a {
+    font-size: 1.5rem;
+    transition: all 0.1s;
 }
 
-.logo{
-    overflow: hidden;
+.desktop-nav ul .li:hover,
+a:hover {
+    transform: scale(1.1);
+}
+
+.desktop-nav ul li a {
+    font-size: inherit;
+    text-decoration: none;
+    color: #000000;
+}
+
+.box {
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #F5F5F5;
+    display: flex;
+    width: 15%;
+    min-width: 165px;
+}
+
+.box input {
+    border-radius: 5px;
+    padding: 5px;
+    outline: none;
+    border: none;
+    background-color: #F5F5F5;
+}
+
+.box a {
+    margin-top: 3px;
+    margin-left: auto;
+}
+
+.icons {
+    margin-top: 5px;
+    transform: scale(1.5);
+}
+
+.logo {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    margin-right: 150px;
+}
+
+.page-title {
+    position: absolute;
+    left: 9%;
+}
+
+.page-title .title {
+    font-size: 2.5rem;
+    white-space: nowrap;
+    font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+#yellow {
+    color: #DFAF67;
+}
+
+#blue {
+    color: #004AAD;
+}
+
+.logo img {
+    width: 50px;
+    height: auto;
+}
+
+.hamburger {
+    position: relative;
+    display: block;
+    width: 35px;
+    height: auto;
+    cursor: pointer;
+
+    appearance: none;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.hamburger {
+    position: relative;
+    display: block;
+    width: 35px;
+    cursor: pointer;
+    margin-left: auto;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+}
+
+.hamburger .bar,
+    .hamburger:after,
+    .hamburger:before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 5px;
+        background-color: #fff;
+        margin: 6px 0px;
+        -webkit-transition: 0.1s;
+        transition: 0.1s;
+    }
+
+.hamburger.is-active:before {
+    -webkit-transform: rotate(-45deg) translate(-8px, 6px);
+    transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+.hamburger.is-active:after {
+    -webkit-transform: rotate(45deg) translate(-9px, -8px);
+    transform: rotate(45deg) translate(-9px, -8px);
+}
+
+.hamburger.is-active .bar {
+    opacity: 0;
+}
+
+.mobile-nav {
+    display: none;
+}
+
+.mobile-nav .ul {
+    list-style: none;
     display: flex;
     flex-direction: column;
+    margin-left: auto;
     align-items: center;
-    background-color: white;
+    justify-content: space-around;
 }
 
-.logo img{
-    width: 50%;
-    height: 50%;
-    overflow: hidden;
-    object-fit: cover;
-    background-color: white;
+.mobile-nav li{
+    width: 30vw;
+    background-color: red;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    margin: 1%;
+    color: #004AAD;
+}
+@media screen and (max-width:1082px) {
+    .logo {
+        margin-right: 0;
+    }
+
+    .page-title .title {
+        display: none;
+    }
 }
 
-@media screen and (max-width:480px){
-    .header .nav{
-        width: 100%;
+@media screen and (max-width:480px) {
+    .page-title .title {
+        display: flex;
     }
 
-    .header .ul{
-        flex-direction: column;
-        justify-content: flex-start;
+    .page-title{
+        margin-left: 5%;
+    }
+    
+    .mobile-nav ul li a, #search-m{
+        text-decoration: none;
+    }
+    .oferta {
+        display: none;
     }
 
-    .header .li{
-        margin: 1rem 0;
+    .desktop-nav {
+        display: none;
     }
 
+    .mobile-nav {
+        background-color: #f1d5aa;
+        display: flex;
+    }
 }
