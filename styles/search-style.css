@@ -146,14 +146,6 @@ body{
 }
 
 @media screen and (max-width:420px){
-    .header .ul{
-        padding-left: 1.2em;
-    }
-
-    .padre{
-        padding-left: 5vh;
-    }
-
     .contenedor-filtros{
         display: none;
     }

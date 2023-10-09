@@ -25,6 +25,7 @@ body{
     flex: 0.3;
     padding-top: 5%;
     margin-left: 1%;
+    padding-bottom: 5%;
 }
 
 .secciones p{
@@ -43,6 +44,7 @@ body{
     flex-direction: column;
 
     padding-top: 2%;
+    padding-left: 5%;
 }
 
 .titulo-user{
@@ -51,6 +53,12 @@ body{
 
 .editar-usuario{
     font-size: 18px;
+
+    color: #24469F;
+}
+
+.color{
+    color: #24469F;
 }
 
 .formulario-all{
@@ -64,18 +72,68 @@ body{
 
 .formulario-unique{
     font-size: 4rem;
-    width: 30vh;
-    height: 60vh;
-    margin: 20px;
+    width: 45vh;
+    height: 10vh;
+    margin-bottom: 10px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    background-color: white;
-
-    border-radius: 5px;
-    border: 1px solid lightgray;
 }
 
+input[type=text] ,input[type=password]{
+    padding-left: 2%;
+}
+
+.form p{
+    padding-bottom: 3%;
+}
+
+
+.formulario-unique input[type=text], input[type=password]{
+    width: 90%;
+    height: 65%;
+
+    border-radius: 4px;
+    border: 1px solid lightgray;
+    background-color: #F5F5F5;
+}
+
+.formulario-btn button{
+    width: 40%;
+    height: 60px;
+    border: none;
+    border-radius: 5px;
+    
+}
+
+.formulario-btn .cancelar{
+    background-color: rgb(236, 235, 235);
+}
+
+.formulario-btn .guardar{
+    background-color: #24469F;
+    color: white;
+    border: 1px;
+}
+
+@media screen and (max-width:420px){
+    .contenedor-filtros{
+        display: none;
+    }
+
+    .formulario-all{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .user-config-padre{
+        padding-left: 0%;
+    }
+
+    .formulario-unique input[type=text], input[type=password]{
+        width: 87%;
+    }
+
+}
 
 
