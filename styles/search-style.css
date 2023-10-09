@@ -71,10 +71,15 @@ body{
 .contenedor-filtros {
     flex: 0.3;
     padding-top: 5%;
+    margin-left: 1%;
 }
 
 .titulo-resultado{
     font-size: 18px;
+}
+
+.btn-filtros{
+    display: none;
 }
 
 .secciones p{
@@ -177,13 +182,45 @@ body{
     padding-bottom: 5%;
 }
 
-@media screen and (max-width:400px){
+@media screen and (max-width:420px){
     .header .ul{
         padding-left: 1.2em;
     }
 
     .padre{
         padding-left: 5vh;
+    }
+
+    .contenedor-filtros{
+        display: none;
+    }
+
+    .resultado{
+        margin-left: 5%;
+    }
+    
+    .btn-filtros{
+        display: flex;
+        justify-content: center;
+        width: 5em;
+        height: 2em;
+
+        margin-top: 2%;
+        border: 1px solid lightgray;
+        background-color: white;
+        border-radius: 3px;
+        font-weight: bold;
+
+    }
+
+    .productos-all{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .producto-unique{
+        height: 65vh;
+        width: 32vh;
     }
 
 }
