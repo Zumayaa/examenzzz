@@ -11,54 +11,6 @@ body{
     background-color: rgb(236, 235, 235);
 }
 
-.header{
-    width: 100%;
-    background-color: white;
-    padding: 1em;
-
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: center;
-    position: sticky;
-    top: 0;
-
-    border-bottom: 1px solid lightgrey;
-}
-
-.header .h1{
-    font-size: 20px;
-}
-
-.header .ul{
-    list-style: none;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: flex-end;
-
-    font-size: 20px;
-}
-
-.header .li{
-    margin: 0 .5em;
-}
-
-.logo{
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: white;
-}
-
-.logo img{
-    width: 50%;
-    height: 50%;
-    overflow: hidden;
-    object-fit: cover;
-    background-color: white;
-}
-
 .encabezado{
     font-weight: bold;
     padding-top: 5%;
@@ -86,16 +38,26 @@ body{
     font-size: 20px;
     padding-bottom: 5%;
 }
-
+.precio h2{
+    font-size: 2.4rem;
+}
+.stars{
+    font-size: 1.6rem;
+}
 .contenedor-productos {
+    font-size: 2.4rem;
     flex: 2; 
     display: flex;
     flex-direction: column;
 
     padding-top: 2%;
 }
-
+.texto-producto p{
+    
+    font-size: 1.6rem;
+}
 .comprar {
+    font-size: 2.4rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -111,13 +73,13 @@ body{
     border: none;
     height: 3em;
     width: 6em;
-
+    cursor: pointer;
     border-radius: 3px;
 }
 
 .btn-carrito{
     margin-top: 5%;
-    border-radius: 20px;
+    border-radius: 100%;
     border: none;
     background-color: rgb(255, 189, 68);
 
@@ -126,6 +88,7 @@ body{
 }
 
 .btn-carrito a{
+    margin-left: 8px;
     text-decoration: none;
     color: white;
 }

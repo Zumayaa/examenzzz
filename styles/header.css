@@ -88,7 +88,7 @@ a:hover {
 }
 
 .icons, .box a {
-    margin-top: 5px;
+    margin-top: 7px;
     margin-right: 5px;
     transform: scale(1.5);
 }
@@ -206,6 +206,7 @@ a:hover {
     color: #f1d5aa;
     font-weight: 600;
     text-align: center;
+    margin: 0;
 }
 .title-container{
     display: none;
@@ -241,7 +242,7 @@ a:hover {
 footer{
     bottom: 0;
     background-color: #DFAF67;
-    width: 100vw;
+    /* width: 100vw; */
     font-size: 3rem;
     display: flex;
     /* flex-direction: column; */
@@ -263,7 +264,7 @@ footer h3{
 }
 footer {
     padding-top: 5%;
-    padding-bottom: 10vh;
+    padding-bottom: 5vh;
 }
 footer h4,h5{
     font-size: 1.4em;
@@ -276,8 +277,7 @@ footer ul li > * {
     padding: 5px;
     background-color: #F5F5F5;
     display: flex;
-    max-width: 300px;
-    width: 60vw;
+    max-width: 220px;
 }
 
 .box-email input {
