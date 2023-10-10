@@ -3,3 +3,389 @@ p{
     /* font-family: 'Raleway', sans-serif, Poppins, Inter;  aqui estan las fuentes que se usan*/
     /* font-size: 4.5rem; se hace de tamaño 45px*/
 }
+
+.pag{
+    position: absolute;
+    width: 700vh;
+    height: 310vh;
+    background-color: white;
+    
+}
+.parametro{
+    margin: 50pt;
+    display: flex;
+}
+
+.paramtext{
+    font-size: 10pt;
+    display: inline;
+}
+
+.paramtext2{
+    font-size: 10pt;
+    display: inline;
+    margin-left: 10pt;
+    color: black;
+}
+
+.producto{
+    margin-top: 100pt;
+    margin-left: 300pt;
+    width: 890pt;
+    height: 500pt;
+    display: flex;
+}
+
+.fotosizq{
+    display: flex;
+    width: 140pt;
+    flex-direction: column;
+    
+
+}
+
+.fotizq{
+    margin-top: 32pt;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100pt;
+    background-color: #F5F5F5;
+}
+
+.fotizq2{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 100pt;
+    width: 100%;
+    background-color: #F5F5F5;
+}
+
+.foto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20pt;
+    width: 400pt;
+    background-color: #F5F5F5;
+
+}
+
+.detalles{
+    flex-direction: column;
+    width: 308pt;
+    margin-left: 20pt;
+    display: flex;
+
+}
+
+.prodnombre{
+    font-size: 30pt;
+    font-weight: bold;
+
+}
+
+.rate{
+    margin-top: 10pt;
+    height: 20pt;
+    align-items: center;
+    
+}
+
+.ratetext{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 10pt;
+    display: inline;
+    font-size: 10pt;
+    color: gray;
+    
+}
+
+.precio{
+    height: 20pt;
+    margin-top: 10pt;
+
+}
+
+.preciotext{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #24469F;
+    font-size: 20pt;
+    display: inline;
+}
+
+.desc{
+    height: 55pt;
+    margin-top: 25pt;
+    font-size: 18pt;
+}
+
+.colores{
+    display: flex;
+    height: 25pt;
+    margin-top: 15pt;
+    font-size: 22pt;
+    align-items: center;
+    
+}
+
+.talla{
+    display: flex;
+    height: 26pt;
+    margin-top: 25pt;
+    font-size: 22pt;
+}
+
+.comprar{
+    display: flex;
+    height: 35pt;
+    margin-top: 15pt;
+}
+
+.entrega{
+    display: flex;
+    flex-direction: column;
+    height: 162pt;
+    margin-top: 30pt;
+}
+
+.gratis{
+    display: flex;
+    height: 80pt;
+
+}
+
+
+.deliver{
+    margin-top: 30pt;
+    margin-left: 10pt;
+
+}
+
+.gratistext{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10pt;
+    width: 254pt;
+    height: 80pt;
+    font-size: 22pt;
+
+}
+
+.devolucion{
+    display: flex;
+    height: 80pt;
+
+}
+
+.regresar{
+    margin-top: 28pt;
+    margin-left: 10pt;
+
+}
+
+.regresartext{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10pt;
+    width: 254pt;
+    height: 80pt;
+    font-size: 22pt;
+
+}
+
+.relacionados{
+    display: flex;
+    margin-left: 300pt;
+    margin-top: 60pt;
+    height: 280pt;
+    width: 900pt;
+}
+
+.imagenpro{
+    margin-left: 13pt;
+}
+
+.reseñas{
+    display: flex;
+    width: 900pt;
+    height:600pt;
+    margin-left: 300pt;
+    margin-top: 100pt;
+}
+
+.reseñasizq{
+    width: 350pt;
+}
+
+.estrellas2{
+    display: flex;
+    margin-top: 15pt;
+    margin-left: 10pt;
+    font-size: 22pt;
+}
+
+.punt{
+    font-size: 22pt;
+    display: flex;
+    margin-top: 20pt;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.marg1{
+    margin-left: 15pt;
+}
+
+.reseñasder{
+    flex-direction: column;
+    display: flex;
+    width: 550pt;
+}
+
+.reseñatext{
+    font-weight: bold;
+    font-size: 15pt;
+    margin-top: 15pt;
+}
+
+.calif{
+    margin-top: 5pt;
+    margin-left: 5pt;
+    font-size: 15pt;
+    font-weight: bold; 
+    display: flex;
+}
+
+.lugar{
+    margin-top: 5pt;
+    font-size: 10pt;
+    font-weight: bold; 
+    color: gray;
+}
+
+.verif{
+    margin-top: 5pt;
+    font-size: 13pt;
+    font-weight: bold; 
+    color: #D08513;
+}
+
+.gusto{
+    margin-top: 15pt;
+    font-size: 10pt;
+    font-weight: bold; 
+}
+
+
+.megustab{
+    margin-top: 15pt;
+
+}
+
+.prodrelac{
+    font-size: 13pt;
+    margin-left: 300pt;
+    margin-top: 130pt;
+    color:#24469F;
+    font-weight: bold;
+}
+
+@media screen and (max-width:480px){
+
+.pag{
+    width: 600px;
+    height: 640vh;
+}
+
+.fotizq{
+    margin-top: 0;
+    margin-left: 27pt;
+}
+
+.fotizq2{
+    margin-top: 0;
+    margin-left: 0;
+}
+
+
+.fotosizq{
+    margin-left: 20pt;
+    flex-direction: row;
+    width: 300pt;
+    height: 100pt;
+}
+
+.detalles{
+    margin-top: 15pt;
+}
+
+
+.foto{
+    margin-top: 15pt;
+}
+
+.producto{
+    flex-direction: column;
+    width: 100%;
+    height: 900pt;
+    margin: 0;
+}
+
+.relacionados{
+    flex-direction: column;
+    margin-top: 15pt;
+    margin-left: 0;
+    height: 1650pt;
+}
+
+
+.imagenpro{
+    margin-left: 40pt;
+    height: 400pt;
+    width: 300pt;
+}
+
+.imagenpro2{
+    margin-left: 40pt;
+    height: 400pt;
+    width: 300pt;
+}
+
+
+.prodrelac{
+    font-size: 13pt;
+    margin-left: 20pt;
+    margin-top: 0;
+    color:#24469F;
+    font-weight: bold;
+}
+
+
+.reseñas{
+    flex-direction: column;
+
+    height: 400pt;
+    width: 300pt;
+    margin-top: 200pt;
+    margin-left: 0;
+}
+
+.reseñasder,
+.reseñasizq{
+    margin-left: 40pt;
+}
+
+.reseñasder{
+    margin-top: 50pt;
+}
+
+
+
+
+
+}
+
+
