@@ -208,6 +208,10 @@ body{
 }
 
 @media screen and (max-width:420px){
+    .inicio-padre{
+        padding-top: 0;
+        padding-left: 0;
+    }
     .seccion-izq{
         display: none;
     }

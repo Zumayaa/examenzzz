@@ -4,8 +4,8 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Raleway', sans-serif;
     font-size: 62.5%;
+    font-family: 'Raleway', sans-serif;
 }
 .oferta {
     width: 100%;
@@ -36,7 +36,7 @@
 }
 .desktop-nav {
     background-color: #ffffff;
-    border-bottom: 0.5px #754C0F solid;
+    border-bottom: 0.5px #553d1a63 solid;
 }
 
 .desktop-nav .ul {
@@ -213,7 +213,7 @@ a:hover {
     opacity: 0;
 }
 .mobile-nav ul li button{
-    color: white;
+    color: #f1d5aa;
     appearance: none;
     background: none;
     border: none;

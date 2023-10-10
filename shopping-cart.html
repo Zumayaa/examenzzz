@@ -53,7 +53,7 @@
                 </li>
                 <li class="box">
                     <input type="text" placeholder="¿Qué es lo que buscas?" class="search-box">
-                    <a href="#" class="material-symbols-outlined">
+                    <a href="search.html" class="material-symbols-outlined">
                         search
                     </a>
                 </li>
@@ -63,7 +63,7 @@
                     </a>
                 </li>
                 <li class="icons">
-                    <a href="#" class="material-symbols-outlined">
+                    <a href="shopping-cart.html" class="material-symbols-outlined">
                         shopping_cart
                     </a>
                 </li>
@@ -109,12 +109,12 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="material-symbols-outlined">
+                    <a href="shopping-cart.html" class="material-symbols-outlined">
                         shopping_cart
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="material-symbols-outlined">
+                    <a href="user.html" class="material-symbols-outlined">
                         manage_accounts
                     </a>
                 </li>
@@ -122,7 +122,7 @@
         </nav>
         <div class="box" id="search-m-container">
             <input type="text" placeholder="¿Qué es lo que buscas?" class="search-box">
-            <a href="#" class="material-symbols-outlined" id="search-m">
+            <a href="search.html" class="material-symbols-outlined" id="search-m">
                 search
             </a>
         </div>
@@ -142,41 +142,74 @@
                         <th>Cantidad</th>
                         <th>Subtotal</th>
                     </tr>
-        
                     <tr>
-                        <td><div class="item-info">
-                            <img src="./recursos/monitor.png" alt="">
-                            <div>
-                                <p>Monitor IPS 165hz</p> 
-                            <small>Precio: $6500</small>
-                            <a href="">Quitar</a>
+                        <td>
+                            <div class="item-info">
+                                <img src="./recursos/monitor.png" alt="" class="cart-images">
+                                <div class="item-details">
+                                    <p>Monitor IPS 165hz</p>
+                                    <small>Precio: $6500</small>
+                                    <a href="" class="remove">Quitar</a>
+                                </div>
                             </div>
-                        </div></td>
+                        </td>
                         <td><input type="number" placeholder="1"></td>
-                        <td>$6500</td>
+                        <td class="total-price">$6500</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="item-info">
+                                <img src="./recursos/monitor.png" alt="" class="cart-images">
+                                <div class="item-details">
+                                    <p>Monitor IPS 165hz</p>
+                                    <small>Precio: $6500</small>
+                                    <a href="" class="remove">Quitar</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td><input type="number" placeholder="1"></td>
+                        <td class="total-price">$6500</td>
                     </tr>
                 </thead>
                 <tbody>
                 </tbody>
             </table>
+            <div class="purchase-summary">
+                <div class="coupon-section">
+                    <input type="text" placeholder="Código de cupón">
+                    <button>Aplicar cupón</button>
+                    </div>
+                    <div class="total-purchase">
+                        <table class="total-table">
+                            <caption>Total de la compra</caption>
+                            <tr>
+                                <td>
+                                    Subtotal
+                                </td>
+                                <td class="total-price">$7500</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Envío
+                                </td>
+                                <td>Gratis</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Total
+                                </td>
+                                <td class="total-price">$7500</td>
+                            </tr>
+                        </table>
+                        <div class="final-actions">
+                            <button id="cancel-button">Cancelar compra</button>
+                            <button>Realizar compra</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <!-- <div class="purchase-summary">
-            <div class="coupon-section">
-                <input type="text">
-                <button>Aplicar cupón</button>
-            </div>
-            <div class="total-purchase">
-                <h5>Total de la compra</h5>
-                <div class="subtotal">
-                    <span>Subtotal:</span>
-                    <span>$7600</span>
-                </div>
-                <div class="shipping">
-                    <span>Envío:</span>
-                    <span>Gratis</span>
-                </div>
-            </div>
-        </div> -->
+
 
     </main>
     <footer>
@@ -224,12 +257,12 @@
                 <h3>
                     Cuenta
                 </h3>
-                <a href="#">Mi cuenta</a>
-                <a href="#">Iniciar sesión</a>
-                <a href="#">Registrarme</a>
-                <a href="#">Carrito</a>
+                <a href="user.html">Mi cuenta</a>
+                <a href="login.html">Iniciar sesión</a>
+                <a href="registro.html">Registrarme</a>
+                <a href="shopping-cart.html">Carrito</a>
                 <a href="#">Lista de deseados</a>
-                <a href="#">Ramdeals</a>
+                <a href="index.html">Ramdeals</a>
             </li>
         </ul>
         <ul>
