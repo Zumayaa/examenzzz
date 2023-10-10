@@ -265,6 +265,7 @@ footer h3{
 footer {
     padding-top: 5%;
     padding-bottom: 5vh;
+    /* width: 100vw; */
 }
 footer h4,h5{
     font-size: 1.4em;
@@ -293,6 +294,7 @@ footer ul li > * {
     margin-top: 3px;
     margin-left: auto;
 }
+
 @media screen and (max-width:1082px) {
     footer{
         display: block;

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/2291c68a10.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@900&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./styles/shopping-cart-style.css">
+    <title>RamDeals</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="oferta">
+            <span>Especial venta de verano en todo- OFF 50%</span>
+            <a href="#">¡Compra ahora!</a>
+            <select id="frutas" name="fruta">
+                <option value="Español">Español</option>
+                <option value="Inglés">Inglés</option>
+                <option value="Deustch">Deustch</option>
+                <option value="Naruto">Naruto</option>
+            </select>
+        </div>
+        <nav class="desktop-nav">
+            <ul class="ul">
+                <li class="logo">
+                    <img src="./recursos/Untitled.svg" alt="">
+                    <div class="page-title">
+                        <span class="title" id="yellow">RAM <span class="title" id="blue">DEALS</span></span>
+                    </div>
+                </li>
+                <li class="li">
+                    <a href="index.html">
+                        Inicio
+                    </a>
+                </li>
+                <li class="li">
+                    <a href="">Contacto</a>
+                </li>
+                <li class="li">
+                    <a href="login.html">
+                        Registrarse
+                    </a>
+                </li>
+                <li class="box">
+                    <input type="text" placeholder="¿Qué es lo que buscas?" class="search-box">
+                    <a href="#" class="material-symbols-outlined">
+                        search
+                    </a>
+                </li>
+                <li class="icons">
+                    <a href="#" class="material-symbols-outlined">
+                        favorite
+                    </a>
+                </li>
+                <li class="icons">
+                    <a href="#" class="material-symbols-outlined">
+                        shopping_cart
+                    </a>
+                </li>
+                <li class="icons">
+                    <a href="user.html" class="material-symbols-outlined">
+                        person
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="title-container">
+            <div class="logo">
+                <img src="./recursos/Untitled.svg" alt="">
+                <div class="page-title">
+                    <span class="title" id="yellow">RAM <span class="title" id="blue">DEALS</span></span>
+                </div>
+                <button class="hamburger">
+                    <div class="bar">
+                        .
+                    </div>
+                </button>
+            </div>
+        </div>
+        <nav class="mobile-nav">
+            <ul class="ul">
+                <li class="li">
+                    <a href="index.html" class="material-symbols-outlined">
+                        home
+                    </a>
+                </li>
+                <li class="li">
+                    <button class="material-symbols-outlined is-active" id="search-button">
+                        search</button>
+                </li>
+                <li class="li">
+                    <a href="login.html" class="material-symbols-outlined">
+                        account_circle
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="material-symbols-outlined">
+                        favorite
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="material-symbols-outlined">
+                        shopping_cart
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="material-symbols-outlined">
+                        manage_accounts
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="box" id="search-m-container">
+            <input type="text" placeholder="¿Qué es lo que buscas?" class="search-box">
+            <a href="#" class="material-symbols-outlined" id="search-m">
+                search
+            </a>
+        </div>
+    </header>
+    <main>
+        <div class="prev-sites">
+            <span>
+                <a href="./index.html">Inicio</a>
+                <a href="./shopping-cart.html">Carrito</a>
+            </span>
+        </div>
+        <div class="table-container">
+            <table class="products-table">
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Cantidad</th>
+                        <th>Subtotal</th>
+                    </tr>
+        
+                    <tr>
+                        <td><div class="item-info">
+                            <img src="./recursos/monitor.png" alt="">
+                            <div>
+                                <p>Monitor IPS 165hz</p> 
+                            <small>Precio: $6500</small>
+                            <a href="">Quitar</a>
+                            </div>
+                        </div></td>
+                        <td><input type="number" placeholder="1"></td>
+                        <td>$6500</td>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+        <!-- <div class="purchase-summary">
+            <div class="coupon-section">
+                <input type="text">
+                <button>Aplicar cupón</button>
+            </div>
+            <div class="total-purchase">
+                <h5>Total de la compra</h5>
+                <div class="subtotal">
+                    <span>Subtotal:</span>
+                    <span>$7600</span>
+                </div>
+                <div class="shipping">
+                    <span>Envío:</span>
+                    <span>Gratis</span>
+                </div>
+            </div>
+        </div> -->
+
+    </main>
+    <footer>
+        <ul>
+            <li>
+                <h3>
+                    RAMDEALS
+                </h3>
+                <h4>
+                    Suscríbete
+                </h4>
+                <h5>
+                    ¡Ten un 10% de descuento en
+                    tu primera orden!
+                </h5>
+
+                <div class="box-email">
+                    <input type="text" placeholder="Ingresa tu correo" class="search-box">
+                    <a href="#" class="material-symbols-outlined">
+                        send
+                    </a>
+                </div>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <h3>
+                    Soporte
+                </h3>
+                <h4>
+                    Baja California Sur <br> entre Emiliano Zapata <br> SN Int.SN Chametla, <br> 23205 La Paz, <br> Baja
+                    California Sur
+                    México
+                </h4>
+                <h5>
+                    ramdeals@ramservice.com
+                </h5>
+                <h5>
+                    +52-612-117-41-05
+                </h5>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <h3>
+                    Cuenta
+                </h3>
+                <a href="#">Mi cuenta</a>
+                <a href="#">Iniciar sesión</a>
+                <a href="#">Registrarme</a>
+                <a href="#">Carrito</a>
+                <a href="#">Lista de deseados</a>
+                <a href="#">Ramdeals</a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <h3>
+                    Otros
+                </h3>
+                <a href="#">Privacidad</a>
+                <a href="#">Términos de uso</a>
+                <a href="#">FAQ</a>
+                <a href="#">Contáctanos</a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <h3>
+                    Descarga
+                    la App
+                </h3>
+                <a href="#">Ahorra 60 pesos en tu
+                    primera compra</a>
+                <img src="./recursos/qr 1.png" alt="">
+            </li>
+        </ul>
+    </footer>
+    <script src="./scripts/hamburger.js"></script>
+</body>
+
+</html>
