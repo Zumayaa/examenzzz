@@ -14,7 +14,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@900&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./styles/shopping-cart-style.css">
+    <link rel="stylesheet" href="./styles/purchase-confirmation.css">
     <title>RamDeals</title>
 </head>
 
@@ -134,6 +134,12 @@
                 <a href="./shopping-cart.html">Carrito</a>
             </span>
         </div>
+        <div class="conf-container">
+            <div class="confirmation-msg">
+                Usted ha realizado su compra con éxito
+                <a href="index.html">Continuar</a>
+            </div>
+        </div>
         <div class="table-container">
             <table class="products-table">
                 <thead>
@@ -178,39 +184,33 @@
                 <div class="coupon-section">
                     <input type="text" placeholder="Código de cupón">
                     <button>Aplicar cupón</button>
-                    </div>
-                    <div class="total-purchase">
-                        <table class="total-table">
-                            <caption>Total de la compra</caption>
-                            <tr>
-                                <td>
-                                    Subtotal
-                                </td>
-                                <td class="total-price">$7500</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    Envío
-                                </td>
-                                <td>Gratis</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    Total
-                                </td>
-                                <td class="total-price">$7500</td>
-                            </tr>
-                        </table>
-                        <div class="final-actions">
-                            <button id="cancel-button">Cancelar compra</button>
-                            <button id="buy-button">Realizar compra</button>
-                        </div>
-                    </div>
+                </div>
+                <div class="total-purchase">
+                    <table class="total-table">
+                        <caption>Total de la compra</caption>
+                        <tr>
+                            <td>
+                                Subtotal
+                            </td>
+                            <td class="total-price">$7500</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Envío
+                            </td>
+                            <td>Gratis</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Total
+                            </td>
+                            <td class="total-price">$7500</td>
+                        </tr>
+                    </table>
                 </div>
             </div>
         </div>
-
-
+        </div>
     </main>
     <footer>
         <ul>
