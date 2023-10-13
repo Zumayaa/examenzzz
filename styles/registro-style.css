@@ -9,15 +9,15 @@
 }
 
 body{
-    background-color: lightgray;
+    background-color: white;
 }
 
 .padre{
     display: flex;
     align-items: center;
-    background-color: white;
     width: 100%;
     height: 100%;
+    margin-bottom: 20vh;
 }
 
 .padre .imagen {
@@ -55,7 +55,6 @@ body{
     padding-left: 5%;
     
 }
-
 .form-login .inicia-sesion{
     font-size: 3.2rem;
     text-align: center; /*dandoloe el mismo ancho de los inputs (lo mas ancho de la caja por asi decirlo) y dandole text aling center se centra el texto*/
@@ -111,7 +110,6 @@ body{
     font-size: 2.4rem;
     width: 20px;
 }
-
 .form-login .tienes{
     font-size: 1.6rem;
     margin-bottom: 15px;
@@ -143,6 +141,7 @@ body{
 
     .padre{
         flex-direction: column;
+        margin-bottom: 10vw;
     }
 
     .padre .imagen {
@@ -166,4 +165,11 @@ body{
     }
 
 
+}
+
+@media screen and (max-width:375px){
+
+    .padre{
+        margin-bottom: 20vh;
+    }
 }

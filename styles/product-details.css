@@ -1,52 +1,52 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,900&display=swap');
-html{
+
+html {
     background-color: white;
 }
 
 
-.pag{
+.pag {
     /* position: absolute; */
-  
+
     flex-direction: column;
     background-color: white;
 }
-.parametro{
+
+.parametro {
     width: 320pt;
     padding: 20pt;
     display: flex;
-    margin-top: 50pt;
     margin-left: 50pt;
 }
 
-.paramtext{
+.paramtext {
     font-size: 10pt;
     display: inline;
 }
 
-.paramtext2{
+.paramtext2 {
     font-size: 10pt;
     display: inline;
     margin-left: 10pt;
     color: black;
 }
 
-.producto{
-
-    margin-top: 100pt;
-    margin-left: 300pt;
+.producto {
+    margin-left: auto;
+    margin-right: auto;
     width: 890pt;
     height: 500pt;
     display: flex;
 }
 
-.fotosizq{
+.fotosizq {
     display: flex;
     width: 140pt;
     flex-direction: column;
 
 }
 
-.fotizq{
+.fotizq {
     margin-top: 32pt;
     display: flex;
     align-items: center;
@@ -56,7 +56,7 @@ html{
     background-color: #F5F5F5;
 }
 
-.fotizq2{
+.fotizq2 {
 
     align-items: center;
     display: flex;
@@ -66,7 +66,7 @@ html{
     background-color: #F5F5F5;
 }
 
-.foto{
+.foto {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -76,7 +76,7 @@ html{
 
 }
 
-.detalles{
+.detalles {
 
     flex-direction: column;
     width: 308pt;
@@ -85,103 +85,106 @@ html{
 
 }
 
-.prodnombre{
+.prodnombre {
     font-size: 30pt;
     font-weight: bold;
 
 }
 
-.rate{
+.rate {
     margin-top: 10pt;
     height: 20pt;
     align-items: center;
-    
+
 }
 
-.ratetext{
+.ratetext {
     font-family: Arial, Helvetica, sans-serif;
     margin-left: 10pt;
     display: inline;
     font-size: 10pt;
     color: gray;
-    
+
 }
 
-.precio{
+.precio {
     height: 20pt;
     margin-top: 10pt;
 
 }
 
-.preciotext{
+.preciotext {
     font-family: Arial, Helvetica, sans-serif;
     color: #24469F;
     font-size: 20pt;
     display: inline;
 }
 
-.desc{
+.desc {
     height: 55pt;
     margin-top: 25pt;
     font-size: 18pt;
 }
 
-.colores{
+.colores {
     display: flex;
     height: 25pt;
     margin-top: 15pt;
     font-size: 22pt;
     align-items: center;
-    
+
 }
 
-.talla{
+.talla {
     display: flex;
     height: 26pt;
     margin-top: 25pt;
     font-size: 22pt;
 }
 
-.comprar{
+.comprar {
     display: flex;
     height: 35pt;
-    
+
     margin-top: 15pt;
 }
 
-.entrega{
+.entrega {
     display: flex;
     flex-direction: column;
     height: 162pt;
     margin-top: 30pt;
 }
 
-.gratis{
+.gratis {
     display: flex;
     height: 80pt;
 
 }
 
 
-.deliver{
+.deliver {
     margin-top: 30pt;
     margin-left: 10pt;
-    
+
 }
 
-.fotores{
-    
+.fotores {
+
     height: 100%;
 }
-.fotores2{
+
+.fotores2 {
     width: 100pt;
     height: 100%;
 }
-.fotores3{
+
+.fotores3 {
     width: 30pt;
     height: 100%;
 }
-.gratistext{
+
+.gratistext {
     display: flex;
     flex-direction: column;
     margin-left: 10pt;
@@ -191,19 +194,19 @@ html{
 
 }
 
-.devolucion{
+.devolucion {
     display: flex;
     height: 80pt;
 
 }
 
-.regresar{
+.regresar {
     margin-top: 28pt;
     margin-left: 10pt;
 
 }
 
-.regresartext{
+.regresartext {
     display: flex;
     flex-direction: column;
     margin-left: 10pt;
@@ -213,42 +216,42 @@ html{
 
 }
 
-.relacionados{
+.relacionados {
 
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
-    margin-left: 300pt;
-    margin-top: 60pt;
     height: 280pt;
     width: 900pt;
 }
 
-.imagenpro{
+.imagenpro {
     margin-left: 13pt;
-    
+
 
 }
 
-.reseñas{
+.reseñas {
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     width: 900pt;
-    height:600pt;
-    margin-left: 300pt;
-    margin-top: 100pt;
+    height: 600pt;
 }
 
-.reseñasizq{
+.reseñasizq {
     width: 350pt;
-    
+
 }
 
-.estrellas2{
+.estrellas2 {
     display: flex;
     margin-top: 15pt;
     margin-left: 10pt;
     font-size: 22pt;
 }
 
-.punt{
+.punt {
     font-size: 22pt;
     display: flex;
     margin-top: 20pt;
@@ -256,236 +259,248 @@ html{
     font-weight: bold;
 }
 
-.marg1{
+.marg1 {
     margin-left: 15pt;
 }
 
-.reseñasder{
+.reseñasder {
     flex-direction: column;
     display: flex;
     width: 550pt;
 }
 
-.reseñatext{
+.reseñatext {
     font-weight: bold;
     font-size: 15pt;
     margin-top: 15pt;
 }
 
-.calif{
+.calif {
     margin-top: 5pt;
     margin-left: 5pt;
     font-size: 15pt;
-    font-weight: bold; 
+    font-weight: bold;
     display: flex;
 }
 
-.lugar{
+.lugar {
     margin-top: 5pt;
     font-size: 10pt;
-    font-weight: bold; 
+    font-weight: bold;
     color: gray;
 }
 
-.verif{
+.verif {
     margin-top: 5pt;
     font-size: 13pt;
-    font-weight: bold; 
+    font-weight: bold;
     color: #D08513;
 }
 
-.gusto{
+.gusto {
     margin-top: 15pt;
     font-size: 10pt;
-    font-weight: bold; 
+    font-weight: bold;
 }
 
 
-.megustab{
+.megustab {
     margin-top: 15pt;
 
 }
 
-.prodrelac{
+.prodrelac {
     font-size: 13pt;
     margin-left: 300pt;
     margin-top: 130pt;
-    color:#24469F;
+    color: #24469F;
     font-weight: bold;
 }
 
-.fotores4{
+.fotores4 {
     height: 100%;
     width: 100%;
 }
 
-.fotores5{
+.fotores5 {
     width: 15%;
 }
 
-@media screen and (max-width:480px){
+@media screen and (max-width:480px) {
+
+
+    /* .reseñas {
+        margin-left: 300pt;
+        margin-top: 100pt;
+    }
+    .relacionados {
+        margin-left: 300pt;
+        margin-top: 60pt;
+    }
+    .producto {
+        margin-top: 100pt;
+        margin-left: 300pt;
+    } */
+
+    .pag {
+        height: 650vh;
+
+    }
+
+    .parametro {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .paramtext {
+        width: 100%;
+    }
+
+    .paramtext2 {
+        width: 100%;
+    }
+
+    .fotizq {
+        width: 100%;
+        height: 100%;
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    .fotizq2 {
+        width: 100%;
+        height: 100%;
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+
+    .fotosizq {
+        margin-left: 0;
+        flex-direction: row;
+        width: 100%;
+
+    }
+
+    .detalles {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 15pt;
+    }
+
+    .fotoo {
+        width: 100%;
+    }
+
+    .foto {
+        width: 100%;
+        margin-top: 15pt;
+        margin-left: 0;
+    }
+
+    .producto {
+
+        flex-direction: column;
+        width: 100%;
+        height: 900pt;
+        margin: 0;
+    }
+
+    .relacionados {
+        flex-direction: column;
+        margin-top: 15pt;
+        margin-left: 0;
+        height: 1650pt;
+        width: 100%;
+    }
+
+
+    .imagenpro {
+
+        margin-left: 0;
+        height: 400pt;
+        width: 100%;
+    }
+
+    .imagenpro2 {
+        margin-left: 0;
+        height: 400pt;
+        width: 100%;
+    }
+
+
+    .prodrelac {
+        font-size: 13pt;
+        margin-left: 20pt;
+        margin-top: 0;
+        color: #24469F;
+        font-weight: bold;
+    }
+
+
+    .reseñas {
+        flex-direction: column;
+        height: 400pt;
+        width: 100%;
+        margin-top: 200pt;
+        margin-left: 0;
+    }
+
+    .relac {
+        margin: 0;
+    }
+
+    .reseñasder,
+    .reseñasizq {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .reseñasder {
+        margin-top: 50pt;
+    }
+
+    .comprar {
+        width: 100%;
+    }
+
+
+    .fotores {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .fotores2 {
+        width: 130%;
+        height: 100%;
+    }
+
+
+    .desctext {
+        height: 100%;
+        width: 100%;
+    }
+
+    .fotores3 {
+        margin-left: 15pt;
+        width: 130%;
+        height: 100%;
+    }
+
+    .fotores4 {
+        margin-left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .fotores5 {
+        width: 15%;
+        height: 100%;
+    }
 
 
 
-.pag{
-    height: 650vh;
 
 }
-
-.parametro{
-    width: 100%;
-    margin-left: 0;
-}
-
-.paramtext{
-    width: 100%;
-}
-
-.paramtext2{
-    width: 100%;
-}
-
-.fotizq{
-    width: 100%;
-    height: 100%;
-    margin-top: 0;
-    margin-left: 0;
-}
-
-.fotizq2{
-    width: 100%;
-    height: 100%;
-    margin-top: 0;
-    margin-left: 0;
-}
-
-
-.fotosizq{
-    margin-left: 0;
-    flex-direction: row;
-    width: 100%;
-    
-}
-
-.detalles{
-    width: 100%;
-    margin-left: 0;
-    margin-top: 15pt;
-}
-.fotoo{
-    width: 100%;
-}
-
-.foto{
-    width: 100%;
-    margin-top: 15pt;
-    margin-left: 0;
-}
-
-.producto{
-
-    flex-direction: column;
-    width: 100%;
-    height: 900pt;
-    margin: 0;
-}
-
-.relacionados{
-    flex-direction: column;
-    margin-top: 15pt;
-    margin-left: 0;
-    height: 1650pt;
-    width: 100%;
-}
-
-
-.imagenpro{
-
-    margin-left: 0;
-    height: 400pt;
-    width: 100%;
-}
-
-.imagenpro2{
-    margin-left: 0;
-    height: 400pt;
-    width: 100%;
-}
-
-
-.prodrelac{
-    font-size: 13pt;
-    margin-left: 20pt;
-    margin-top: 0;
-    color:#24469F;
-    font-weight: bold;
-}
-
-
-.reseñas{
-    flex-direction: column;
-    height: 400pt;
-    width: 100%;
-    margin-top: 200pt;
-    margin-left: 0;
-}
-
-.relac{
-    margin: 0;
-}
-
-.reseñasder,
-.reseñasizq{
-    margin-left: 0;
-    width: 100%;
-}
-
-.reseñasder{
-    margin-top: 50pt;
-}
-
-.comprar{
-    width: 100%;
-}
-
-
-.fotores{
-    margin: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.fotores2{
-    width: 130%;
-    height: 100%;
-}
-
-
-.desctext{
-    height: 100%;
-    width: 100%;
-}
-.fotores3{
-    margin-left: 15pt;
-    width: 130%;
-    height: 100%;
-}
-
-.fotores4{
-    margin-left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-
-.fotores5{
-    width: 15%;
-    height: 100%;
-}
-
-
-
-
-}
-
-
