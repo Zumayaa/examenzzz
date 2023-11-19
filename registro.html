@@ -47,7 +47,7 @@
           <a href="">Contacto</a>
         </li>
         <li class="li">
-          <a href="login.html">
+          <a href="registro.html">
             Registrarse
           </a>
         </li>
@@ -143,13 +143,13 @@
       <h1 class="inicia-sesion">
         Crea una cuenta
       </h1>
-      <form action="submit">
-        <input type="text" placeholder="Nombres">
-        <input type="text" placeholder="Apellidos">
-        <input type="text" placeholder="Correo electrónico">
-        <input type="text" placeholder="Número telefónico">
-        <input type="password" placeholder="Contraseña">
-        <input type="password" placeholder="Confirmar tu contraseña">
+      <div class="form-inputs">
+        <input type="text" placeholder="Nombres" id="name">
+        <input type="text" placeholder="Apellidos" id="last_names">
+        <input type="text" placeholder="Correo electrónico" id="email">
+        <input type="text" placeholder="Número telefónico" id="cellphone_number">
+        <input type="password" placeholder="Contraseña" id="password">
+        <input type="password" placeholder="Confirmar tu contraseña" id="repeat_password">
         <button class="btn-inicia">Crear cuenta</button>
         <button class="btn-google">
           <span>
@@ -158,7 +158,7 @@
           </span>
         </button>
         <p class="tienes">¿Ya tienes una cuenta? <a href="login.html">Inicia sesión</a></p>
-      </form>
+      </div>
     </div>
   </div>
 
@@ -238,7 +238,7 @@
       </li>
     </ul>
   </footer>
-  <script src="./scripts/hamburger.js"></script>
+  <script src="./scripts/register.js"></script>
 </body>
 
 </html>
