@@ -1,6 +1,7 @@
 const userInfo = document.querySelectorAll('.form-inputs input');
 const logInButton = document.querySelector('.btn-inicia')
-const registeredUsers = getRegisteredUsers()
+const registeredUsers = localStorage.getItem('users') 
+
 logInButton.addEventListener('click', () => {
   const userDataArray = Array.from(userInfo);
   const formatedData = formatArray(userDataArray)
