@@ -6,7 +6,7 @@ logInButton.addEventListener('click', () => {
   const formatedData = formatArray(userDataArray)
   if (!isObjectEmpty(formatedData)){
     if (credentialsAuthentication(formatedData,getRegisteredUsers()) ){
-        window.location.href = "../index.html";
+        window.location.href = "./index.html";
       }else {
         alert("Correo ó contraseña incorrecto/s verifique su marcación")
       }

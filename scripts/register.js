@@ -7,7 +7,7 @@ registerButton.addEventListener('click', () => {
   const conditionalsForRegister = registerNewUser(formatedData);
   const {arePasswordCorrect, isNotEmpty, isNotRegisteredEmail} = conditionalsForRegister;
   if (arePasswordCorrect && isNotEmpty && isNotRegisteredEmail){
-    window.location.href = "../index.html";
+    window.location.href = "./index.html";
   }else{
     const errorMessage = generateErrorMessage(conditionalsForRegister);
     alert(errorMessage)
