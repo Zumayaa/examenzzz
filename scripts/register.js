@@ -1,18 +1,23 @@
 const userInfo = document.querySelectorAll('.form-inputs input');
 const registerButton = document.querySelector('.btn-inicia')
-const registeredUsers = getRegisteredUsers()
+const registeredUsers = getRegisteredUsers();
 registerButton.addEventListener('click', () => {
   const userDataArray = Array.from(userInfo);
   const formatedData = formatArray(userDataArray)
-  if (registerNewUser(formatedData)){
+  const conditionalsForRegister = registerNewUser(formatedData);
+  const {arePasswordCorrect, isNotEmpty, isNotRegisteredEmail} = conditionalsForRegister;
+  if (arePasswordCorrect && isNotEmpty && isNotRegisteredEmail){
     window.location.href = "../index.html";
   }else{
-    alert("El correo electrónico ya se encuentra en uso, las contraseñas no coinciden o rellene todos los campos")
+    const errorMessage = generateErrorMessage(conditionalsForRegister);
+    alert(errorMessage)
   }
 })
 function formatArray(array){
   let userDataFormated = {};
+  
   for (const inputField of array) {
+    colorizeInputs(array)
     if (inputField.value){
       const fieldName = inputField.id;
       const value = inputField.value;
@@ -22,6 +27,12 @@ function formatArray(array){
     }
   }
   return userDataFormated;
+}
+function colorizeInputs(array){
+  array.map((inputField) => {
+    if (!inputField.value) inputField.style.backgroundColor = "lightpink";
+    else inputField.style.backgroundColor = "white";
+  })
 }
 function arePasswordEqual(user){
   return user.password === user.repeat_password;
@@ -44,19 +55,35 @@ function isObjectEmpty(objectName){
   );
 }
 function registerNewUser(userDataObject){
-  if(arePasswordEqual(userDataObject) 
-    && !isObjectEmpty(userDataObject)
-    && !isEmailRegistered(userDataObject,registeredUsers)) {
+  const filters = {
+    arePasswordCorrect: arePasswordEqual(userDataObject),
+    isNotEmpty: !isObjectEmpty(userDataObject),
+    isNotRegisteredEmail: !isEmailRegistered(userDataObject,registeredUsers)
+  };
+  const {arePasswordCorrect, isNotEmpty, isNotRegisteredEmail} = filters;
+
+  if(arePasswordCorrect && isNotEmpty && isNotRegisteredEmail) {
     delete userDataObject.repeat_password;
     registeredUsers.push(userDataObject);
     localStorage.removeItem('users')
     localStorage.setItem('users', JSON.stringify(registeredUsers))
-    return true;
-  }else {
-    return false;
   }
+  return filters;
 }
 function getRegisteredUsers(){
-  const registeredUsers = localStorage.getItem('users')
-  return (registeredUsers) ? JSON.parse(registeredUsers) : localStorage.setItem('users','[]') 
+  if (localStorage.getItem('users') === null) localStorage.setItem('users','[]');
+  return JSON.parse(localStorage.getItem('users'));
+}
+function generateErrorMessage(filters){
+  const {arePasswordCorrect, isNotEmpty, isNotRegisteredEmail} = filters;
+  console.log(filters)
+  let message = "";
+  console.log()
+  message += (!arePasswordCorrect) ? "Las contraseñas no coinciden\n" : ""
+  console.log(message)
+  message += (!isNotEmpty) ? "Rellene todos los campos\n" : ""
+  console.log(message)
+  message += (!isNotRegisteredEmail) ? "Ese correo ya se encuentra registrado\n" : ""
+  console.log(message)
+  return message;
 }

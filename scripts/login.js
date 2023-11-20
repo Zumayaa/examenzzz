@@ -54,6 +54,6 @@ function isObjectEmpty(objectName){
   );
 }
 function getRegisteredUsers(){
-  const registeredUsers = localStorage.getItem('users')
-  return (registeredUsers) ? JSON.parse(registeredUsers) : localStorage.setItem('users','[]') 
+  if (localStorage.getItem('users') === null) localStorage.setItem('users','[]');
+  return JSON.parse(localStorage.getItem('users'));
 }
